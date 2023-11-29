@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "path: -\"All own writings\" path:-\"All papers and books\" path:-\"All courses\", file:-\"changelog\" file:-\"_func index\"",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"_2. Functional models\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"All papers and books\"",
+      "color": {
+        "a": 1,
+        "rgb": 5431394
+      }
+    },
+    {
+      "query": "path:\"_1. Concrete facts\"",
+      "color": {
+        "a": 1,
+        "rgb": 1854164
+      }
+    },
+    {
+      "query": "path:\"_3. Quality and attributes models\"",
+      "color": {
+        "a": 1,
+        "rgb": 3077435
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -0.9,
+  "nodeSizeMultiplier": 0.840758547008547,
+  "lineSizeMultiplier": 1.63648504273504,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.5087618855793004,
+  "close": true
+}

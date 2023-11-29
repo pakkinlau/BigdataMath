@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"4c59139125954732","x":-830,"y":-835,"width":250,"height":60,"type":"text","text":""},
+		{"type":"file","file":"NewNotes/Algebraic computability.md","id":"5ff2124b59338226","x":360,"y":-956,"width":380,"height":136},
+		{"type":"file","file":"NewNotes/context model.md","id":"a14a6dba380998b0","x":360,"y":-680,"width":390,"height":93},
+		{"type":"text","text":"=Success indicators=","id":"622186496fbcf25a","x":470,"y":-1120,"width":160,"height":60,"color":"3"},
+		{"type":"file","file":"_2. Functional models (non-terminals)/Cross entropy.md","id":"6b5227e5b0acc9d4","x":360,"y":-500,"width":399,"height":128},
+		{"type":"text","text":"The rule of recognizing entities","id":"1ca1cd2bf793238f","x":-480,"y":-700,"width":240,"height":67},
+		{"type":"text","text":"The rule of recognizing edges ","id":"f9bb3ec25d14b840","x":-485,"y":-580,"width":250,"height":60},
+		{"type":"file","file":"All own writings/$ Articles about Vault design/Vault design.md","id":"8356fd7b1478c334","x":-860,"y":-660,"width":240,"height":80},
+		{"type":"text","text":"Designer aspects","id":"7fa20b6fc8a0cfdf","x":-490,"y":-1120,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"Computer aspects","id":"aa4884ea87e0e77c","x":-59,"y":-1120,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"# Entity Viewport\n1. The user could open each entity as a viewport that reads all established \"knowledge\"\n2. \"Knowledge\" = Connected nodes, so each thread/knowledge in a viewport contain at least 1 node and 1 edge (for 1 node 1 edge case, we name it as \"attributional knowledge\")\n3. That means, the content of one viewport could be edited on another viewport. ","id":"23645e063ba7a087","x":-128,"y":-460,"width":380,"height":320},
+		{"type":"text","text":"# Graph view\n1. Both computationally and visually informative\n2. Human users could learn how to interpret meaning from graph view","id":"555158ca4595f6c1","x":-128,"y":-80,"width":380,"height":180},
+		{"type":"text","text":"# Edge-inventories\n1. While the number of entities could be infinite, the number of the types of edges should be managed, such as to be managed in hierarchical relationship. Because \"kind of relationships\" should be finite. \n2. With finite edge type, we can let the computer to use some algorithm to convert natural text into knowledge graphs, which the edges are more probable fall into predefined categories.\n3. Predefined categories would gives the edge meaning, which allow the computer to compute the graph more efficiently.","id":"125c929b4b4d6f76","x":-128,"y":140,"width":380,"height":420},
+		{"type":"text","text":"User interface","id":"a83c33da3222e5a7","x":-500,"y":-110,"width":250,"height":60},
+		{"type":"text","text":"# Consistency of objects naming\n\n1. For ","id":"425136a60e8a4a71","x":360,"y":-300,"width":399,"height":160},
+		{"type":"text","text":"Communication standard","id":"e43c629c16b24bfb","x":-880,"y":800,"width":250,"height":60},
+		{"type":"text","text":"Different kind of relationship should have different kind of \"object-relations\" expression, which aligns with how we express relationship between elements in math. \nRDF, however, has only one kind of structure, Subject, predicate and object. Which seems not a very effective communication method","id":"09366961383a6a1a","x":-500,"y":740,"width":372,"height":220},
+		{"type":"text","text":"=Reference=","id":"124e57364df9033d","x":920,"y":-1120,"width":160,"height":60,"color":"3"},
+		{"type":"file","file":"_2. Functional models (non-terminals)/representation.md","id":"f4e36751d5fdf654","x":-561,"y":-1008,"width":372,"height":120}
+	],
+	"edges":[
+		{"id":"73009649f123d928","fromNode":"f4e36751d5fdf654","fromSide":"right","toNode":"5ff2124b59338226","toSide":"left"},
+		{"id":"32d33d8c2893e862","fromNode":"f4e36751d5fdf654","fromSide":"right","toNode":"a14a6dba380998b0","toSide":"left"},
+		{"id":"3e82da4fab558d51","fromNode":"f4e36751d5fdf654","fromSide":"right","toNode":"6b5227e5b0acc9d4","toSide":"left"},
+		{"id":"5efbe081b3824465","fromNode":"8356fd7b1478c334","fromSide":"right","toNode":"1ca1cd2bf793238f","toSide":"left"},
+		{"id":"bff53d2302850939","fromNode":"1ca1cd2bf793238f","fromSide":"right","toNode":"f4e36751d5fdf654","toSide":"left"},
+		{"id":"a4a2bd34b8d56a4b","fromNode":"8356fd7b1478c334","fromSide":"right","toNode":"f9bb3ec25d14b840","toSide":"left"},
+		{"id":"1a9968481480d50c","fromNode":"f9bb3ec25d14b840","fromSide":"right","toNode":"f4e36751d5fdf654","toSide":"left"},
+		{"id":"8af872cd47c30180","fromNode":"8356fd7b1478c334","fromSide":"right","toNode":"a83c33da3222e5a7","toSide":"left"},
+		{"id":"06f8e92c3f0f5e32","fromNode":"a83c33da3222e5a7","fromSide":"right","toNode":"23645e063ba7a087","toSide":"left"},
+		{"id":"b9255178e08359ee","fromNode":"a83c33da3222e5a7","fromSide":"right","toNode":"555158ca4595f6c1","toSide":"left"},
+		{"id":"bede46787b3aec63","fromNode":"a83c33da3222e5a7","fromSide":"right","toNode":"125c929b4b4d6f76","toSide":"left"},
+		{"id":"1d3d94b25ef48493","fromNode":"f4e36751d5fdf654","fromSide":"right","toNode":"425136a60e8a4a71","toSide":"left"}
+	]
+}

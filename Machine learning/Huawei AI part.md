@@ -1,0 +1,72 @@
+- AI
+	- AI basics
+		- Basics
+		- AI technology fields
+			- Algorithms: regression, decision trees, support vector machine...
+			- Research methods: Bayesian, connectionism, symbolicism, analogizers
+			- Areas of AI technologies: Knowledge exctraction, CV, expert system, NLP, planning and optimizing, adaptive learning, robotics
+			- Application: digital gov, smart city, auto driving....
+		- Cutting-edge AI technologies and scenarios
+		- Corn concerns:
+			- Trustworthy AI
+			- AI theory research
+			- AI application development
+			- privacy protection
+			- basic computing power development
+	- AL algorithms
+		- Machine learning 
+		- Deep learning
+	- Huawei AI development platform
+		- AI development framework
+			- Tensorflow
+			- PyTorch
+			- PaddlePaddle
+			- MindSpore
+		- Current market environment
+			- Foreign
+				- Tensorflow (google), PyTorch (Meta), MXNet (Amazon)
+			- China:
+				- Paddle (Baidu)
+				- MindSpore (Huawei)
+			- Computing processor
+				- GPU, CPU, NPU
+		- MindSpore
+			- Architecture
+				- Unified C++ inference API
+				- Unified model
+				- Diversified computing power
+				- Model compression technolgoy
+			- Framework basics
+				- Features
+					- Model layer
+					- MindExpression
+					- MindCompiler
+					- Hardware operators are interconnected and invoked based on the optimised result
+				- [[MindSpore API level structure]]
+			- Huawei full stack and all-scenario applicaiton
+				- [[MindSpore All-scenario support mode]]
+		- Huwwei Cloud AI development platform
+	- MindSpore development framework
+		- [[MindSpore Serving]]
+		- [[MindSpore Lite]]
+		- [[MindInsight]]
+		- MindSpore Vision
+		- MindSpore reinforcement
+		- MindSpore Federated
+	- Development process
+		- Requirement analysis
+		- Environment setup (MindSpore 1.7.1, python 3.7)
+		- Data preparation
+			- APIs for dataset processing
+			- Code implementation for data preprocessing
+		- Network building
+			- ResNet
+			- Network structure APIs
+		- Model training 
+			- Start training from scratch based on your own dataset
+			- Start training based on the trained model and perform fine-tuning training on own dataset. 
+			- Training APIs
+				- Modelling loading and prediction
+				- Deployment
+		- Application deployment (Huawei cloud ModelArts for development, model training and deployment)
+		- Mindstore basics and usage

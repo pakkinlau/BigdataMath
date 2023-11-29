@@ -1,0 +1,1 @@
+- Much similar to [[symmetric matrix]], but the definition of antisymmetric matrix is $A = -A^T$, have imaginary $\lambda$'s and orthonormal (complex) $q$'s.

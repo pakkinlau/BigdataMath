@@ -1,0 +1,5 @@
+- When you perform a certain operation on elements within a set, the result of that operation should also belong to the same set. 
+	- Addition Closure: 
+		- In a vector space, if you take two vectors (elements) from that vector space and add them together, the result (the sum) is still a vector within the same vector space. This is what is meant by "closure" with respect to addition in a vector space.
+	- Multiplication Closure: 
+		- In the context of a vector space, if you multiply a vector (element) by a scalar (a real number), the result (the scalar multiple of the vector) is still a vector within the same vector space. This demonstrates "closure" with respect to scalar multiplication.

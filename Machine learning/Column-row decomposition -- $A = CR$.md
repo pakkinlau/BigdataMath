@@ -1,0 +1,50 @@
+- Say $A = \begin{bmatrix} c_1 & c_2 & c_3 \end{bmatrix}$, but $c_3$ is a dependent column, which $c_1 + c_2 = c_3$. 
+	- To express $c_3$ is dependent on $c_1$ and $c_2$, we can write it in two another ways:
+		- 1. [[Matrix-Vector Multiplication]]:
+			- $\begin{bmatrix} a_3 \end{bmatrix} = \begin{bmatrix} a_1 & a_2\end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix}$
+		- 2. [[Matrix-matrix multiplication]]
+			- Say $A$ is our matrix. We can decompose our any $A$ to be: $A = CR$, which we use $C$ to capture independent column space. 
+			- What's new?
+				- 1. We call $C$ is the [[column space]] of $A$. We call $R$ is are a [[factor matrix]].  
+				- 2. The $r$ columns of $C$ are a basis for the [[column space]] of $A$ ([[dimension]] = r)
+				- 3. The $r$ rows of $R$ are a [[Basis]] for the [[row space]] of $A$. ([[dimension]] = r)
+					- a. Because the full set of independent vectors are called [[basis]].
+					- b. The rows of $R$ span the row space of $A$ 
+						- The first row of $A$ can be constructed in this way: $\begin{bmatrix} 1 & 4 & 5 \end{bmatrix} = 1 \cdot \begin{bmatrix} 1 & 0 & 1 \end{bmatrix} + 4 \cdot \begin{bmatrix} 0 & 1 & 1 \end{bmatrix}$
+						- Similarly, you can do the same for the second and third row.
+						- This demonstrates that the rows of $R$ can be used to express all the rows of $A$ as [[linear combination]], which means they [[span]] the [[row space]] of $A$. 
+				- 4. $R$ turns out to be [[Reduced Row Echelon Form|RREF]] of $A$. 
+					- Recall the properties of REFF:
+						- The leading entries (the ones that are not zero) in each row of $R$ are 1, and all other entries in the same column are 0.
+						- It is a upper-triangular matrix, with diagonal entries are 1. 
+						- Rows of $R$ that consist entirely of 0's are at the bottom, if $A$ is not full-rank.
+						- The RREF is a systematic way of organizing and simplifying a matrix to make it easy to solve linear systems of equations.
+					- This similarity between the properties of $R$ and the properties of the RREF of a matrix is not a coincidence. When you perform matrix factorization using techniques like Gaussian elimination or other row operations, you essentially transform matrix $A$ into its RREF form as one of the intermediate steps.
+				- 5. If $A$ is [[invert|invertible]], then $C = A$, and $R = I$. Turns out the $A = CR = AI$ has no progress.
+			- For example, we have $A = \begin{bmatrix} 1 & 4 & 5 \\ 3 & 2 & 5 \\ 2 & 1 & 3 \end{bmatrix}$
+			- Using $A = CR$ decomposition, we have $A = CR = \begin{bmatrix} a_1 & a_2 & a_3 \end{bmatrix} = \begin{bmatrix} a_1 & a_2 \end{bmatrix} \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1\end{bmatrix}$
+				- $C$: 
+					- Those three columns of $R$ give three combinations in $A$ in the two independent columns "the real meat" in $C$. 
+				- $R$:
+					- This is the target of the first two weeks of linear algebra course.
+					- Review information we have at hand:
+						- 1. [[column picture]] multiplication
+							- When multiplying, we use [[column picture]] to know that is, to create a linear combinations of $C$ with distributing the columns of values of $R$ one by one to the each column of $C$, such as $x_1 a_1$, $x_2 a_2$, $x_3 a_3$. 
+						- 2. $R$: 
+							- The acknowledgement of the column 3 of $R$ is $\begin{bmatrix} 1 \\ 1\end{bmatrix}$.
+						- 3. $C$: 
+							- the acknowledgement of  $C$ only contains independent columns of $A$, 
+					- Combining facts 1-3, we knows that the third column of $A$ is dependents and $a_3 = a_1 + a_2$ by reading the column value of $R$ is $\begin{bmatrix} 1 \\ 1\end{bmatrix}$.
+			- Insights from this transformation:
+				- A has dependent columns
+				- A has dependent rows
+				- The column space of this $A$ is only a plane and not the whole $R^3$.
+				- The row space of this $A$ is only a plane and not the whole $R^3$.
+				- THe square matrix $A$ has no inverse. Its determinant is zero.
+				- Two columns in $C$ and two rows in $R$ telling us our $A$: the row rank = the column [[rank]] = 2: 
+
+- Important theorem:
+	- If all columns of $A$ are multiples of column 1, show that all rows of $A$ are multiples of one row
+	- Proof using $A = CR$
+	- One column in $C$ $\Rightarrow$ one row $w$ in $R$ (because there are no other choice!)
+	- Then $A = \begin{bmatrix} \vdots \\ v \\ \vdots \end{bmatrix} \begin{bmatrix} w \end{bmatrix} = \begin{bmatrix} vw \\ \vdots \\  vw \\ \vdots \\ vw\end{bmatrix}$, which shows all rows of $A$ are multiples of $w$. 

@@ -1,0 +1,16 @@
+- Relevance:
+	- Classification of knowledge
+- Definition: 
+	- Pattern knowledge, also known as procedural or implicit knowledge, involves recognizing and understanding patterns, relationships, and underlying structures. 
+	- It is more abstract and often acquired through experience, practice, or exposure to various examples. 
+	- Pattern knowledge allows individuals to recognize similarities, identify trends, and make predictions based on previous observations.
+- Types of pattern knowledge:
+	- Sequential patterns
+	- Spatial patterns
+	- Temporal patterns
+	- Causal patterns
+	- Analogical patterns
+	- Social patterns
+	- Statistical patterns
+	- Behavioral patterns
+	- Pattern recognition in AI and machine learning 

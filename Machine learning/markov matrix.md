@@ -1,0 +1,1 @@
+- When studying [[Eigenvalues and eigenvectors]], markov matrix is mentioned because its largest eigenvalue is $\lambda = 1$, its eigenvector is $(.6, .4)$, which is in the steady state.

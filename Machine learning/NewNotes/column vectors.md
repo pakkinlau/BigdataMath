@@ -1,0 +1,15 @@
+- Definition:
+	- a column vector is a one-dimensional array of numbers arranged in a vertical column, hence the name (column vector).
+- Representation:
+	- Vertical arrangement of numbers enclosed within square brackets: $V = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}$, 
+		- where  
+			- $v_1$: first component of $V$
+			- $v_2$: second component of $V$
+	- We write $V$ as a column, not as a row. 
+- Components of a vectors are acting as an individual
+	- Each components are treated as individual, and are not treated as vectors themselves. 
+	- i.e. each components can be [[Linear independence]] or non-linear independent to each others. 
+- [[Dimension]]:
+	- The dimension of a column vector is determined by the number of components it contains. For instance, a column vector with three components is considered a 3-dimensional vector.
+	- Operations: 
+	- You can't add apples and oranges. In a strange way, this is the reason for vectors. 

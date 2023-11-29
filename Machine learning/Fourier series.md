@@ -1,0 +1,71 @@
+- $\langle f(x), g(x) \rangle = \int_a^b f(x) \bar g(x) dx$ 
+- $f(x) = \frac{A_0}{2} + \sum_{k=1}^\infty (A_kcos(kx) + B_ksin(kx))$
+	- the sine and cosine become higher and higher frequency if we consider higher term of $k$. 
+	- the problem is how to compute the coefficients $A_k$ and $B_k$
+- $A_k = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)cos(kx) dx = \frac{1}{||cos(kx)||^2} \langle f(x), cos(kx) \rangle$
+	- This formula is derived from the properties of orthogonal functions and the concept of inner products in functional spaces.
+	- Projection onto a basis
+		- $A_k = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)cos(kx) dx$ can be thought of as a way to project the function $f(x)$ onto the basis of cosine functions. The integral essentially measures how much of the function $f(x)$ aligns with the cosine function $cos(kx)$. 
+	- Amplitude interpretation:
+		- The factor $\frac{1}{||cos(kx)||^2}$ normalize the result to be consistent with the amplitudes you would expect in a Fourier series. Without the factor, the result would not directly represent the amplitude of the $k$-th harmonic.
+		- the denominator in the right hand side of the equal sign, normalize the inner product
+- $B_k = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)sin(kx) dx = \frac{1}{||sin(kx)||^2} \langle f(x), sin(kx) \rangle$
+
+---
+## Tom rocks maths
+
+- periodic function
+	- $sin(x)$: $2 \pi$ periodic
+	- $sin(\frac{n \pi x}{L})$: stationary over a range, 2L periodic
+
+- orthogonality 
+	- $\int_{-L}^L sin(\frac{m\pi x}{L})  sin(\frac{n\pi x}{L}) dx$
+	- = $\frac{1}{2} \int_{-L}^L cos((m-n)\frac{\pi x}{L} -  cos((m+n)\frac{\pi x}{L} dx$
+	- $= \frac{1}{2} [ \frac{L}{\pi (m-n)} sin((m-n)\frac{\pi x}{L}) - \frac{L}{\pi (m+n)} sin((m+n)\frac{\pi x}{L})]_{-L}^{L}$
+		- so if $m \neq n$, we got integer $\pi$ within the sine function. So we get $0$
+		- if $m = n$, we get $L$
+		- 
+---
+
+## Gilbert Strang
+
+- $\sum_{n=0}^{\infty} a_n cosnx +\sum_{n=1}^{\infty} b_n sin nx = \sum_{n= - \infty}^{\infty}c_ne^{in x}$
+	- cosine part
+		- notice that cosine term is starting from $0$ because it got $1$ when $n = 0$. 
+		- it represents the even par of the function
+	- sine part
+		- sine part is starting from $n=1$ because it is $0$ when $n = 0$. Not includes in could simplifies the formula. 
+	- complex exponential series
+		- it combines both even and odd parts into a single series. 
+		- $c_n$ are complex numbers
+		- $e^{inx}$ represents complex exponentials. 
+			- $e^{ikx} = cos(kx) + i sin(kx)$ 
+	- ways to find $a_n$, $b_n$ and $c_n$ is orthogonality.
+- $\int_{-\pi}^{\pi} (cosnx)(coskx)dx = 0$
+	- it is little similar to dot product ($c_1d_1 + c_2 d_2)$, but here we are integrating because we have a function.
+	- orthogonality 
+		- dot product of orthogonal vectors is zero. Similarly, $n$ and $k$ is different the function $cosnx$ and $coskx$ have different frequencies can be thought of as orthogonal in a sense
+	- we will use this fact in fourier series, multipling the whole fourier series expansion to proof the formula's properties. 
+- $\int_{-\pi}^{\pi} f(x) coskx dx = \int_{-\pi}^{\pi}(\sum_0^{\infty}a_n cosnx) coskx dx$
+	- Now the right hand side would have a lot of zeros because the prior discussed property.
+	- Only one exception let
+	- $\int_{-\pi}^{\pi}(\sum_0^{\infty}a_n cosnx) coskx dx = \int_{-\pi}^{\pi} a_k (coskx)^2 dx = a_k \pi$
+		- = $cos^2(\theta) = \frac{1}{2}(1+cos(2 \theta))$
+		- =$cos^2(kx) = \frac{1}{2}(1+cos(2kx))$
+		- substitute this into our integral:
+		- =$\int_{-\pi}^{\pi} a_k \cdot \frac{1}{2}(1+cos(2kx))dx$
+		- =$\frac{a_k}{2}(\int_{-\pi}^{\pi}dx + \int_{-\pi}^{\pi} cos(2kx)dx)$
+		- $= \frac{a_k}{2} 2\pi + 0$
+		- $= a_k \pi$
+	- Compare the end point with the starting point, we have 
+		- $a_k =  \frac{1}{\pi}\int_{-\pi}^{\pi}f(x) coskx dx$
+		- This is really the dot product with the cosine.
+	- Similarly,  $b_k = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x) sinkx dx$
+		- and if we crop the range by half, $b_k = \frac{2}{\pi}\int_{0}^{\pi}f(x) sinkx dx$
+- discuss the first term
+	-  $a_0 =  \frac{1}{2\pi}\int_{-\pi}^{\pi}f(x) 1 dx$, 
+		- the simple meaning of $a_0$: it is the average of $f(x)$. 
+		- by dividing the total area by $2 \pi$, you are effectively finding the average value of $f(x)$ over that interval. 
+- Working out the integration
+	-  $b_k = \frac{2}{\pi}\int_{0}^{\pi}f(x) sinkx dx = \frac{2}{\pi} [- \frac{cos kx}{k}]_0^\pi$
+	- 

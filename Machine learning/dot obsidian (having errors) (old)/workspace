@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "f8e024b54e8f31e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "422902ac76ee467b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_1. Concrete facts/NLP tasks.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "8b62c1566289cd9b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_2. Functional models/Lemmatization.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44364675a0c42dcb",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d16f4269983863c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b17beb3de69bd6f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8b66cfb08467561a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "lemma",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7e697624820e1ec9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 291.5
+  },
+  "right": {
+    "id": "292a2da2ba05a58c",
+    "type": "split",
+    "children": [
+      {
+        "id": "411a6ebaad1a73a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80e044bc7fc75a63",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "_1. Concrete facts/NLP tasks.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "file: -\"_all facts\" file: -\"_all quality models\" file: -\"changelog\" -\"_func index\" path:-\"All papers and books\" path:-\"All research sprints\" path: -\"All courses\"",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [
+                    {
+                      "query": "path:\"_2. Functional models\"",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14701138
+                      }
+                    },
+                    {
+                      "query": "path:\"_1. Concrete facts\"",
+                      "color": {
+                        "a": 1,
+                        "rgb": 3160501
+                      }
+                    },
+                    {
+                      "query": "path:\"_3. Quality and attributes models\"",
+                      "color": {
+                        "a": 1,
+                        "rgb": 261139
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": -3,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.5087618855792712,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "70737cb98ce59274",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_1. Concrete facts/NLP tasks.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "730e3a9ba0edef6d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d4f0f8f4dbff07ad",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_1. Concrete facts/NLP tasks.md"
+              }
+            }
+          },
+          {
+            "id": "7ea7a1f14db11781",
+            "type": "leaf",
+            "state": {
+              "type": "ReferenceListView",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "30a6be891c067ec9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47b04637329e0566",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_1. Concrete facts/NLP tasks.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 486.5
+  },
+  "active": "422902ac76ee467b",
+  "lastOpenFiles": [
+    "_2. Functional models/Lemmatization.md",
+    "NewNotes/Constituency.md",
+    "_1. Concrete facts/NLP tasks.md",
+    "NewNotes/Sentiment.md",
+    "_2. Functional models/Named entity recognition.md",
+    "_2. Functional models/Dependency parsing.md",
+    "_2. Functional models/part of speech.md",
+    "_2. Functional models/Multi-word token expansion.md",
+    "_2. Functional models/Morphological feature.md",
+    "NewNotes/Morphology.md"
+  ]
+}

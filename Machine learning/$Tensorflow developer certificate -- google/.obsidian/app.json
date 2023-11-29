@@ -1,0 +1,8 @@
+{
+  "spellcheck": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "NewNotes",
+  "attachmentFolderPath": "Attachements",
+  "promptDelete": false
+}

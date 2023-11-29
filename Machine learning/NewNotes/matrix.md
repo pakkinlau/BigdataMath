@@ -1,0 +1,56 @@
+---
+alias: matrices
+---
+
+
+- 21-10-2022: created
+
+- subset:
+	- [[Matrix factorization]]
+	- [[Global matrix factorization methods]]
+	- [[Adjacency matrix]]
+
+---
+- Definition:
+	- It is serving as a powerful mathematical tool for representing and manipulating data in various applications. 
+	- A matrix $A \in C^{m \times n}$ takes a vector $x \in C^n$ and outputs a vector $b = Ax \in C^m$. 
+		- $A: C^n \rightarrow C^m$, $x  \mapsto Ax$ , which $A$ is a function that [[Linear transformation]] the vector from the complex vector space $C^n$ as its input, and maps it to a vector in a complex vector space $C^m$ as its output. 
+- Notation:
+	- $C^{m \times n}$: It means a complex matrix, with $m$ rows and $n$ columns.
+- Representation:
+	- Linear equations: 
+		- First we have [[linear combination]] of [[vector]] $au + bv + cw = constant$ 
+		- We rewrite that combination using a matrix, we have $\begin{bmatrix} a\ 0\ 0 \\ 0\ b\ 0 \\ 0\ 0\ c \end{bmatrix} \begin{bmatrix} u \\ v \\ w \end{bmatrix} = constant$
+		- It can be denoted as $Ax = b$. Where $A$ is a matrix, $x$ is a vector with $u, v, w$ as its component. 
+- Applications:
+	- It is essential for [[systems of linear equations]], performing transformations, and analyzing complex relationships between vectors and [l[inear transformation]]s. 
+- Characteristics:
+	- Rectangular Array: 
+		- A matrix is a rectangular array of numbers, symbols, or expressions arranged in rows and columns. The dimensions of a matrix are defined by its number of rows and columns, denoted as $m \times n$, where $m$ represents the number of rows, and $n$ represents the number of columns.
+	- Elements: 
+		- The individual entries within a matrix are called elements. These elements can be real numbers, complex numbers, or even variables, depending on the context. Each element is identified by its row and column position within the matrix.
+	- Size: 
+		- The size or order of a matrix is determined by its number of rows and columns. For example, a matrix with 3 rows and 4 columns is referred to as a 3x4 matrix.
+- Types of matrices:
+	- Row Matrix: 
+		- A matrix with only one row is known as a row matrix or a row vector.
+	- Column Matrix: 
+		- A matrix with only one column is called a column matrix or a column vector.
+	- Square Matrix: 
+		- When the number of rows equals the number of columns (m = n), it is a square matrix.
+	- Scalar Matrix: 
+		- A square matrix where all diagonal elements are equal, and all other elements are zero.
+	- Identity Matrix (I):
+		- A special square matrix with diagonal elements equal to 1 and all other elements equal to 0.
+	- Zero Matrix (or Null Matrix): 
+		- A matrix in which all elements are zero.
+- Matrix operations:
+	- Addition: Matrices of the same dimensions can be added together element-wise, resulting in a new matrix of the same size.
+	- Scalar Multiplication: A matrix can be multiplied by a scalar (a single number), which involves multiplying each element of the matrix by that scalar.
+	- Matrix Multiplication: Two matrices can be multiplied together if the number of columns in the first matrix matches the number of rows in the second matrix. The resulting matrix's dimensions will be the number of rows from the first matrix and the number of columns from the second matrix.
+- Applications of matrices in linear algebra:
+	- Solving Systems of Linear Equations: Matrices are used to represent systems of linear equations, making it easier to solve them using techniques like Gaussian elimination or matrix inverses.
+	- Transformation: Matrices are employed to represent linear transformations, such as rotations, translations, and scaling, in geometric applications.
+	- [[Eigenvalues and Eigenvectors]]: Matrices play a central role in finding eigenvalues and eigenvectors, which are important in various fields, including physics, engineering, and computer graphics.
+	- Markov Chains: Matrices are used to model and analyze Markov chains, which are stochastic processes used in probability theory and statistics.
+	- Data analysis

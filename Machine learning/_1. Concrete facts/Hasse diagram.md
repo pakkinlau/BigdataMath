@@ -1,0 +1,15 @@
+- 7-10-2022: created
+
+- Hasse diagram
+	- In order theory
+	- Represent a finite partially ordered set, in the form of drawing of its transitive reduction.
+		- For a partially ordered set S, Hasse diagrame represent each element of S as a vertex and draws a line segment or curve that goes upward from x to y whenever y "covers x"
+	- Disadvantages
+		- It turns out to be difficult to draw "good" diagram, because there will in general be many possible ways to draw Hasse diagram for a given poset.
+		- The simple technique of starting with the minimal elements: could losing the symmetry and internal structure of the order.
+- Graded poset
+	- A partially ordered set P equipped with a rank function from P to the set N of all natural numbers. Rank function must satisfy these properties
+		- 1. Rank function is compatible with the ordering, if x < y in the order, then p(x) < p(y).
+		- 2. Covering relation, such that the rank function can be describe as base case + constructure case.
+- Nested Hasse diagram (my proposal)
+	- Similar things in the nature: protein itself has a structure, but a chain of protein could also forms a structure. 

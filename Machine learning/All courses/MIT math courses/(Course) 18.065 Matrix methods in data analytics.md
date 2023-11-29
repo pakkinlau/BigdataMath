@@ -1,0 +1,5 @@
+- course webpage:
+	- https://github.com/mitmath/18065
+- textbook:
+	- Linear Algebra and Learning from Data
+		- https://www.doc88.com/p-14161897603103.html

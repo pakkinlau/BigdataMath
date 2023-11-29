@@ -1,0 +1,29 @@
+- Definition:
+	- The rank of $A$ is the number of [[pivot]]. The number is $r$. 
+	- In linear algebra, the column rank of a matrix, is the [[dimension]] of the column space (the number of [[Linear independence|linearly independent]] columns). The row rank of a matrix is the [[dimension]] of the space spanned by its row. 
+- Notation:
+	- The rank of a matrix A is denoted as $rank(A)$ or sometimes simply $r(A)$.
+- Computing rank:
+	- There are several methods to compute the rank of a matrix, including Gaussian elimination and various matrix factorization techniques.
+	- Gaussian elimination is a common method to reduce a matrix to [[row echelon form]] and count the number of non-zero rows, which gives the rank.
+- [[Linear independence]]:
+	- Linear independence is a key concept in understanding rank. Rows or columns in a [[matrix]] are linearly independent if none of them can be expressed as a [[linear combination]] of the others.
+	- The rank is essentially the size of the largest set of linearly independent rows or columns in the matrix.
+
+- Rank and [[dimensionality reduction]]:
+	- The rank of matrix $A$ is said to be full rank if its rank is equal to the minimum of $m$ and $n$. 
+	- Full rank projection means there is no dimensionality reduction when transforming input data. 
+	- 
+
+- Rank and solutions:
+	- In a system of linear equations represented by the augmented matrix [A | B], where A is the coefficient matrix and B is the constants vector, the rank of A can determine the existence and uniqueness of solutions.
+	- If rank(A) = rank([A | B]), then the system has a unique solution.
+	- If rank(A) < rank([A | B]), then the system has infinitely many solutions.
+	- If rank(A) < rank([A | B]) and there are some inconsistent equations, the system has no solution.
+- Rank and inverse:
+	- For a square matrix A (n x n), if rank(A) = n, then A is said to be a full-rank matrix and is invertible. In this case, it has a unique inverse.
+	- If rank(A) < n, A is singular and does not have a unique inverse.
+- Rank and [[determinant]]:
+	- The determinant of a square matrix can also provide information about its rank. If the determinant is non-zero, then the matrix is full rank.
+- Rank and [[matrix]] operations:
+	- Rank has implications for matrix operations. For example, the sum of the ranks of two matrices cannot exceed the rank of their concatenated matrix.

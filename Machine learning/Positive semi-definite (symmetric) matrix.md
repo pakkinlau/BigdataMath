@@ -1,0 +1,8 @@
+- A positive semidefinite matrix is a Hermitian matrix all of whose eigenvalues are non-negative.
+- eg: $\begin{bmatrix} 2&6 \\ 6&18 \end{bmatrix}$. 
+	- 1. The pivot test doesn't do it quite well
+	 - $\lambda_1 = 0$ (because it is singular matrix)
+		- $\lambda_2 = 20$ (because $\sum a_{ii} = \sum \lambda_i$)
+		- Pivot: 2 (only 1 independent column)
+	- 2. $x^TAx$ test 
+		- $\begin{bmatrix}x_1&x_2\end{bmatrix} \begin{bmatrix} 2&6 \\ 6&18 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix}x_1&x_2\end{bmatrix} \begin{bmatrix} 2x_1 + 6x_2 \\ 6x_1 + 18x_2 \end{bmatrix} = 2x_1^2 + 12x_1x_2 + 18 x_2^2 = ax^2 + 2bxy + cy^2$

@@ -1,0 +1,27 @@
+- What is query?
+	- Query is a request for information from a database or search engine. 
+	- When a query is executed, it is processed by the database management system (DBMS), which then retrieves the requested data and returns it to the user. The DBMS uses a query optimizer to determine the most efficient way to execute the query, which involves analyzing the query and the structure of the database to find the best approach.
+	- The basic structure of a query involves selecting a specific set of data from one or more tables, and applying various conditions or filters to limit the results to a specific subset of the data. 
+	- How DBMS optimize the best way to execute the query?
+		- eg: `SELECT * FROM Orders WHERE CustomerCity = 'New York' ORDER BY OrderDate DESC;`
+		- It will consider factors such as the size of the Orders table, the number of rows that match the condition, and the available indexes.
+			- the DBMS might decide to use an index on the CustomerCity column to quickly locate all rows that match the condition, and then sort the results using the OrderDate column.
+			- Alternatively, it might decide to use a different index or perform a full table scan if it determines that this would be more efficient.
+- Data structure used inside a database query
+	- Indexes: 
+		- Indexes are data structures that allow the database to quickly retrieve specific rows of data from a table. They typically consist of a data structure that maps values to the locations of the corresponding rows in a table.
+			- eg:
+				- Without an index, the database would need to s**can through every row i**n the table, checking the customer ID field to see if it matches the ID of the customer we're interested in. 
+					-  the database has to examine every row in the table to see if it matches the search criteria specified in the query. This is known as a table scan, and it can be a time-consuming process, especially for large tables.
+				- However, if we create an index on the customer ID field, the database can use that index to quickly locate all rows in the table that match the customer ID we're interested in. The index acts as a pointer to the rows in the table that contain the desired data, allowing the database to retrieve those rows much more quickly than if it had to scan through the entire table.
+	- B-trees (generalized binary search tree): 
+		- In computer science, a B-tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time.
+		- The B-tree generalizes the binary search tree, allowing for nodes with more than two children.
+		- B-trees are a type of tree data structure commonly used in databases to store and retrieve data quickly. They work by partitioning data into blocks and arranging those blocks in a tree structure, allowing for efficient searching and insertion.
+		- And more! https://en.wikipedia.org/wiki/B-tree
+	- Hash tables: 
+		- Hash tables are another common data structure used in databases to store and retrieve data quickly. They work by mapping keys to values using a hashing function, allowing for constant-time lookups and inserts in many cases.
+	- Trees: 
+		- In some cases, queries may involve traversing a tree-like structure, such as a hierarchical data model or a database index built on a tree structure.
+	- Arrays and lists: 
+		- Some queries may involve working with arrays or lists of data, which can be represented using these data structures.

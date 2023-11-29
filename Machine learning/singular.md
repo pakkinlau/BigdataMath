@@ -1,0 +1,1 @@
+- In linear algebra, singular means the matrix is not [[invert|invertible]]

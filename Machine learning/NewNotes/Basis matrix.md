@@ -1,0 +1,15 @@
+- Definition:
+	- a basis matrix is a fundamental concept used to represent and manipulate vectors and linear transformations. It serves as a bridge between the abstract mathematical notions of vector spaces and the practical computations involved in solving linear equations and working with linear transformations.
+- Characteristics:
+	- 1. Basis Vectors: 
+		- The basis matrix is constructed from a set of linearly independent vectors known as basis vectors. These vectors are used to span a vector space, which means that any vector within that space can be expressed as a linear combination of these basis vectors.
+	- 2. Column Vectors: 
+		- In the context of a basis matrix, each basis vector becomes a column in the matrix. The arrangement of these column vectors creates the basis matrix, where each column corresponds to a unique basis vector.
+	- 3. Coordinate Representation: 
+		- The basis matrix facilitates the transition from the coordinate representation of vectors to a more abstract, algebraic representation. When you multiply the basis matrix by a vector, it yields the vector's coordinates in the basis defined by the basis matrix.
+- Use and significance:
+	- Change of basis
+	- Linear transformation
+	- Solving linear equations
+- Example:
+	- Consider a vector space in three-dimensional Euclidean space ($\mathbb{R}^3$). The standard basis for $\mathbb{R}^3$ consists of the unit vectors along x,y and z axes. Sliding the basis matrix we got basis vectors: $i = \begin{bmatrix} 1 \\ 0 \\\ 0 \end{bmatrix}$, $j = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}$, $k = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}$

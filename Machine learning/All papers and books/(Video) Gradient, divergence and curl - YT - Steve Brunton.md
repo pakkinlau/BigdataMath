@@ -1,0 +1,84 @@
+
+- Prerequisite knowledge:
+	- Scalar:
+		- 1 term
+		- no vectors involved
+	- Vectors:
+		- 1 or more terms
+		- vectors involved
+
+
+- "Differential operator given in Cartesian coordinates {x,y,z} on 3D Euclidean space" would be: 
+	- $\vec \nabla = \vec i \frac{\partial}{\partial x} + \vec j \frac{\partial}{\partial j} + \vec k \frac{\partial}{\partial z} =\begin{bmatrix} \partial/\partial x \\ \partial/\partial  y \\ \partial/\partial z\end{bmatrix} \begin{bmatrix} \vec i \\ \vec j \\ \vec k \end{bmatrix}$
+	- Properties:
+	  - 1. $\partial / \partial x$ does not have any meaning when used alone. 
+		- $\partial / \partial x$ has meaning only when it is applied to a function that depends on $x$
+	- 2. By 1, Differential operator $\nabla$ also does not have any meaning when used alone. 
+
+
+
+- $\vec \nabla$ : Gradient
+	- 1. Definition: 
+		- Say $f(x,y,z)$ is a scalar field (surface) in n-dimension, then we have $\vec \nabla f = \vec \nabla f(x,y) = grad(f))= \begin{bmatrix} \partial f/\partial x \\ \partial f/\partial  y \\ \partial f /\partial z\end{bmatrix}$ (which is a vector field)
+	- Properties:
+		- 1. "Grad" is linear, specifically, 
+			- $\nabla (f_1 + f_2) = \nabla f_1 + \nabla f_2$
+			- $\nabla(\alpha f) = \alpha \nabla f$
+	- 2. Examples:
+		- (a) Finding slope of a function (1D)
+		- (b) For a 2D scalar field 
+			- Say $f(x,y)$, $\nabla f = \text{grad}(f) = \begin{bmatrix} \frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y} \end{bmatrix}$
+			- Say $f = x^2 + y^2$, 
+				- $\nabla f = \begin{bmatrix} 2x \\ 2y \end{bmatrix}$
+				- So the gradient is like a bowl and the origin is in the middle.
+		- (c) Machine learning - Gradient descent
+		- (d) A fly finds the shortest path to the light source
+- $\vec \nabla \cdot$ : Divergence
+	- Useful for studying compressible or incompressible fluid flows 
+	- Definition: 
+		- Divergence operator is "$\vec \nabla \cdot$"
+			- Recall: Differential operator is $\vec \nabla = \vec i \frac{\partial}{\partial x} + \vec j \frac{\partial}{\partial j} + \vec k \frac{\partial}{\partial z} =\begin{bmatrix} \partial/\partial x \\ \partial/\partial  y \\ \partial/\partial z\end{bmatrix} \begin{bmatrix} \vec i \\ \vec j \\ \vec k \end{bmatrix}$
+			- Then we have: $\vec \nabla \cdot= \begin{bmatrix} \partial/\partial x \\ \partial/\partial  y \\ \partial/\partial z\end{bmatrix} \cdot$
+		- Say we have a vector field $\vec f = \vec i f_1 + \vec j f_2 + \vec k f_3= \begin{bmatrix} f_1(x,y) \\ f_2(x,y) \\ f_3(x,y) \end{bmatrix}$, where $f_i$ are the vector field in a single direction.
+	- Properties
+		- 1. Linearity
+			- $\vec \nabla \cdot (\vec f_A + \vec f_B) = \vec \nabla \cdot \vec f_A + \vec \nabla \cdot \vec f_B$
+			- $\vec f = \begin{bmatrix} f_1(x,y) \\ f_2(x,y) \\ \vdots \\ f_n(x,y) \end{bmatrix}$ for $n$ dimensional problems
+		- 2. Divergence is simple a summation of "expanding outward / contracting inward, in single direction vector" across each direction.
+			- Then $\vec \nabla \cdot f = \begin{bmatrix} \partial/\partial x \\ \partial/\partial  y \\ \partial/\partial z\end{bmatrix} \cdot \begin{bmatrix} f_1 \\ f_2 \\ f_3 \end{bmatrix} = \frac{\partial f_1}{\partial x} + \frac{\partial f_2}{\partial y} +  \frac{\partial f_3}{\partial z}$ (which is a scalar)
+			- The magnitude represents how much my vector field is locally expanding outward or contracting inward **from the origin of the graph**. The value is greater than 0 if it is sourcing out blowing stuff away from a point. 
+				- Q: what is the meaning of $\partial / \partial x$? No meaning. See the notes of differential operator.
+				- Q: what is the meaning of $f_1$? The decomposition of the vector of direction 1. And the function describe the magnitude of that function in that direction. 
+		- 3. Divergence is establishing differential equations
+			- eg: for  $f(x,y) = x \vec i + y \vec j = \begin{bmatrix} x \\ y \end{bmatrix}$, $\frac{d}{dt} \begin{bmatrix} x \\ y\end{bmatrix} = \vec f (x,y) = \begin{bmatrix} 1&0 \\ 0&1\end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix}$
+			- $\begin{bmatrix} x \\ y\end{bmatrix}(t) = \begin{bmatrix}e^t x(0) \\ e^t y(0) \end{bmatrix}$
+	- Examples:
+		- 1. Fluids
+			- If $\vec \nabla = 0$, it is called incompressible in fluid mechanics. 
+		- 2. Graph visualization of $x \vec i + y \vec j$
+			- If we have $f(x,y) = x \vec i + y \vec j = \begin{bmatrix} x \\ y \end{bmatrix}$, 
+				- We draw a $x \vec i + y \vec j$ in every point of the x-y plot. So we have an intuition that $f(x,y) = x \vec i + y \vec j$ is moving out from the origin. So the divergence should be positive.  
+				- So the graph is like a field diverting from the origin.
+				- $\nabla \cdot f = \frac{\partial f_1}{\partial x} + \frac{\partial f_2}{\partial x} = 1+1 = 2$
+			- For $f(x,y) = - x \vec i - y \vec j$
+				- $div(f) = -2$, so it is contracting inward.
+			- For $f(x,y) = - y \vec i + x \vec j$. 
+				- $div(f) = \frac{\partial (-y)}{\partial x} + \frac{\partial x}{\partial y} = 0$
+				- It is rotating around the origin. $f$ is divergence free vector field.
+- Divergence of a gradient is the Laplacian ($\nabla^2$)
+	- $\vec \nabla \cdot \vec \nabla$: Laplacian operator
+	- $\vec \nabla f = \begin{bmatrix} \partial f_1/\partial x \\ \partial f_2/\partial y \end{bmatrix}$
+	- $\vec \nabla \cdot \vec \nabla f = \begin{bmatrix} \partial/\partial x \\ \partial/\partial y \end{bmatrix} \cdot \begin{bmatrix} \partial f_1/\partial x \\ \partial f_2/\partial y \end{bmatrix} = \partial^2 f / \partial x^2 + \partial^2 f / \partial y^2 = \nabla^2 f$
+- $\nabla \times$ : Curl
+	- It seems like fun to observe that linear algebra course does not covered cross product. 
+	- Measure how much stuff is swirling around in a circle. It measures kind of a circulation around a point. 
+	- Definition:
+		- Takes vector $\vec f$ , return vector field
+		- Recall $u \times v$ = $\text{det} \begin{vmatrix} \vec i & \vec j & \vec k \\ u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3  \end{vmatrix} = (u_2 v_3 - u_3 v_2) \vec i - (u_3v_1 - u_1v_3) \vec j + (u_1v_2 - u_2v_1) \vec k$
+		- We could observe that, in cross product, we put the element of the first variable in the second row; put the element of the second variable in the third row.
+		- $\vec \nabla \times \vec f = \begin{vmatrix} \vec i &\vec i & \vec k \\ \partial / \partial x & \partial / \partial y & \partial / \partial z \\ f_1 & f_2 & f_3 \end{vmatrix} = \vec i (\frac{\partial f_3}{\partial y} - \frac{\partial f_2}{\partial z}) -\vec j (\frac{\partial f_3}{\partial x} - \frac{\partial f_1}{\partial z}) + \vec k(\frac{\partial f_2}{\partial x} - \frac{\partial f_1}{\partial y})$
+
+- Application:
+	- A temperature field
+		- Gradient: the direction to have the shortest path to go into hotter
+		- 

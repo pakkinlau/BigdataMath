@@ -1,0 +1,3 @@
+- two vectors are orthogonal. 
+- There is no natural notion of similarity for one-hot vectors (Synonyms?)
+- They failed completely because of incompleteness)

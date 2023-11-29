@@ -1,0 +1,42 @@
+- Definition
+	- The vectors $v_1, \dots, v_k$ are a basis for $S$ if they are [[Linear independence]]
+	- They are composed by "a set of [[Linear independence|linearly independent]] (basis) vectors" that can be combined to represent any [[vector|vector]] within a given vector space.
+	- Basis are not necessarily formed by (1,0,0), (0,1,0), (0,0,1) like Euclidean space. 
+	- Basis could be a linear combination of these values. See examples in [[Column-row decomposition -- $A = CR$]]
+	- Every vector in the space is a unique combination of the basis vectors. 
+- Notation:
+	- It's common mathematical notation to represent a basis of a [[vector space]] as an ordered list or sequence of vectors.
+	- Such as: $B_{old} = (v_1, \dots, v_n)$, 
+		- which $B_{old}$ is the basis
+		- which $v_1, v_2, \dots, v_n$ are a list of [[Basis vectors]]
+- Properties of basis vector
+	- Linear Independence: 
+		- Basis vectors are linearly independent, which means that no vector in the set can be expressed as a linear combination of the others. This property ensures that the representation of a vector in terms of basis vectors is unique.
+	- Spanning the Vector Space: 
+		- The span of basis vectors covers the entire vector space. This means that any vector within the space can be expressed as a linear combination of the basis vectors.
+	- Minimal Set: 
+		- Basis vectors form the smallest possible set of vectors that can span the vector space. If you add or remove a vector from the basis, it will no longer be a basis for that space.
+	- Do not need to be orthogonal:
+		- 
+- Notation
+	- In many contexts, basis vectors are denoted using the symbols e₁, e₂, ..., eₙ for an n-dimensional vector space. For example, in three-dimensional Euclidean space, the basis vectors are often denoted as e₁ = (1, 0, 0), e₂ = (0, 1, 0), and e₃ = (0, 0, 1).
+- Standard basis
+	- In some vector spaces, a standard set of basis vectors is predefined. For instance, in Euclidean space, the standard basis vectors are the unit vectors along each axis (e.g., e₁, e₂, and e₃ in 3D).
+- Application
+	- Coordinate systems
+	- Linear transformation
+	- Solving linear systems
+	- Quantum mechanics
+- Related concept:
+	- Change of basis
+	- Vector space
+	- Linear independence
+	- Spanning set
+	- Dimension
+	- Linear combination
+	- Orthogonal basis
+	- Matrix representation
+	- Eigenvalues and eigenvectors
+	- Basis expansion
+	- Gram-Schmidt process
+	- Hilbert space

@@ -1,0 +1,1 @@
+- Writing and fixating the pipeline before starting the work

@@ -1,0 +1,3 @@
+- 7-10-2022: created
+
+- In [[genetic algorithm]] and [[evolutionary algorithm|evolutionary computation]], crossover, also called recombination, is a [[genetic operator]] used to combine the genetic information of two parents to generate new offspring. It is one way to stochastically generate new [[solution space|solution]] from an existing population, and is analogous to the crossover that happens during sexual reproduction in biology.

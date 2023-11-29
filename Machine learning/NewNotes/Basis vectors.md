@@ -1,0 +1,27 @@
+
+- Related concepts:
+	- Vector space
+	- Linear independence
+	- Spanning set
+	- Coordinate
+	- Standard basis
+	- Change of basis
+	- Dimension 
+	- Orthogonal basis
+
+- Definition:
+	- Normally we won't just talk about one single basis vector
+	- We usually mention a set of linearly independent vectors that can be combined in various ways to represent any vector within a given vector space. 
+- Properties:
+	- Linear independence:
+		- Basis vectors must be linearly independent, meaning that no vector in the basis can be expressed as a linear combination of the others. This ensures that they provide a unique representation for each vector in the space.
+	- Spanning a vector space
+		- The set of all possible linear combinations of basis vectors forms the entire vector space. In other words, basis vectors span the vector space, which means they can be combined to create any vector within that space.
+	- Coordinates
+		- When expressing a vector in terms of a basis, the coefficients used to describe the linear combination of basis vectors are known as the coordinates or components of the vector. These coordinates are unique to the chosen basis.
+	- Standard basis
+		- In Euclidean space like $\mathbb{R}^3$ or $\mathbb{R}^n$ (n-dimensional space), there is a standard basis consisting of unit vectors along each coordinate axis. 
+	- Dimension
+		- The number of basis vectors in a vector space is known as the dimension of that space. For example, ℝ³ has a dimension of 3 because it can be spanned by three linearly independent vectors.
+	- Orthogonal basis
+		- In some cases, it is useful to work with an orthogonal basis where the basis vectors are mutually perpendicular. This simplifies many calculations, especially in applications like signal processing and quantum mechanics.

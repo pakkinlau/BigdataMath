@@ -1,0 +1,1 @@
+- 1. You should know that every situation our brain have to warm up such that our brain could focus on a study, or focus on some romantic issue etc. So there is nothing like "I don't want to study" after you have broken the barrier of "out of the mode".

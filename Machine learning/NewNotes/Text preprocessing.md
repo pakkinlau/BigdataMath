@@ -1,0 +1,18 @@
+- Types:
+	- [[Multi-word token expansion]]
+	- [[Tokenization]]
+	- lowercasing
+	- [[stop word removal]]
+	- [[special character removal]]
+	- [[Lemmatization]]
+	- [[spell checking]]
+	- [[named entity recognition]]
+	- [[part of speech tagging]]
+	- [[Skip-gram]]
+	- [[TF-IDF]]
+	- [[Word representation|word embedding]]
+	- [[padding]]
+	- [[truncation]]
+	- [[normalization]]
+	- [[text compression]]
+	- [[handling missing values]]

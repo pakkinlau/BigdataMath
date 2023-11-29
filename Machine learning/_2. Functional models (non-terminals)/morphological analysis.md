@@ -1,0 +1,2 @@
+- 12-10-2022: created
+- Very lengthy description in wiki: https://www.wikiwand.com/en/Morphology_(linguistics)

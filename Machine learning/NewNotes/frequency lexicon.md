@@ -1,0 +1,3 @@
+- Definition:
+	- A frequency lexicon is essentially a list or dictionary that records the occurrence of each word or term in a given dataset, along with its corresponding frequency count. It provides valuable statistical information about the importance and prevalence of words within a corpus.
+- 

@@ -1,0 +1,15 @@
+- list of attributes
+	- ARC (25-shot)
+		- ARC stands for "AI2 Reasoning Challenge."
+		- a set of grade-school science questions.
+	- HellaSwag (10-shot)
+		- HellaSwag is a dataset and competition introduced to evaluate language models' ability to generate plausible but incorrect answers.
+		- a test of commonsense inference, which is easy for humans (~95%) but challenging for SOTA models.
+	- MMLU (5-shot)
+		- MMLU stands for "Multilingual Multi-Level Unification." It is a benchmark designed to evaluate language models' understanding of multiple languages and their ability to perform tasks across various languages. 
+		- a test to measure a text model’s multitask accuracy. The test covers 57 tasks including elementary mathematics, US history, computer science, law, and more.
+	- TruthfulQA (MC) (0-shot)
+		- TruthfulQA is a dataset and task that focuses on evaluating language models' ability to answer questions accurately and truthfully. 
+		- The attribute "MC" indicates that it is a multiple-choice question answering task.
+		- a benchmark to measure whether a language model is truthful in generating answers to questions
+

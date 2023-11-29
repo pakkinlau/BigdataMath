@@ -1,0 +1,15 @@
+{
+  "showCLICommands": true,
+  "addExtensionsToInternalLinks": "html",
+  "injectAppCSS": "current",
+  "injectThemeCSS": false,
+  "customCSSFile": null,
+  "displayYAMLFrontmatter": false,
+  "linkStrippingBehaviour": "text",
+  "highDPIDiagrams": true,
+  "pandoc": "C:\\Users\\kinla\\AppData\\Local\\Pandoc",
+  "pdflatex": null,
+  "outputFolder": null,
+  "extraArguments": "--- bibliography: C:\\Users\\kinla\\All_programming_projects\\Textual notes\\Machine learning\\Bib\\My first project.bib ---",
+  "exportFrom": "html"
+}

@@ -1,0 +1,9 @@
+   - **L2 Regularization (Ridge):** 
+	   - L2 regularization adds the squared values of the coefficients as a penalty term. It discourages large coefficient values, which can help prevent overfitting and improve the stability of the solution.
+	   - Which adds the square of the magnitude of coefficient as penalty term to the loss function. 
+	   - $\lambda_1 ||x||_2$
+	   - L2 regularization has the effect of shrinking all coefficients towards zero, but it will not set any of them exactly to zero (unless the regularization parameter \lambda is set to an extremely high value). 
+	   - This can be desirable if we believe that all features are relevant, or if we want to avoid overly relying on a single feature.
+- Example of L2 norm application:
+	- Measuring the distance in space
+	- Many solvers by default using L2 norm. But it might not the thing that you want. 

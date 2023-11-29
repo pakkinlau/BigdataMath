@@ -1,0 +1,18 @@
+- Say we have a $m \times n$ matrix $A$, 
+- Difference to [[Reduced QR decomposition]]
+	- 1. In full QR decomposition, $Q$ becomes [[unitary matrices|unitary matrix]]
+		- Discuss why $Q$ could becomes unitary matrix: 
+		- There are three base cases for QR decomposition for a $m \times n$ matrix $A$:
+			- a. $m > n$
+			- b. $m = n$
+			- c. $m < n$
+			- We discussed the [[dimension]] change matter on [[Under-determined|Underdetermined]], [[over-determined|overdetermined]] system notes. 
+	- 2. In full QR decomposition, it orthonormalizes all $n$ columns of $A$. 
+	- 3. Computational efficiency
+		- Reduced QR factorization is computationally more efficient because it only deals with the first $m$ columns of the matrix, where $m$ is the [[rank]] of the matrix
+	- 4. Memory efficiency
+		- educed QR requires less memory because the orthogonal matrix $Q$ has fewer columns.
+
+- Applications 
+	- Reduced QR factorization is often used in applications where you are primarily interested in the lower-dimensional subspace spanned by the columns of the matrix (e.g., solving least squares problems, eigenvalue computations, etc.).
+	- Full QR factorization might be necessary if you need the full orthogonal transformation matrix for applications like solving linear systems or certain eigenvalue problems.

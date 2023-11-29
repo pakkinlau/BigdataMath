@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "8695f64938d86364",
+    "type": "split",
+    "children": [
+      {
+        "id": "82d3251d85732be1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22134a9fd41e5f57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/Course 1 of 4, Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "991c9029daa5a74d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/Course 2 of 4, Convolutional Neural Networks in TensorFlow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "254d2dae76706905",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/Course 3 of 4, Natural Language Processing in TensorFlow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "32ad152c002bbce5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/Course 1 of 4, Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "178a80714a1ccd0c",
+    "type": "split",
+    "children": [
+      {
+        "id": "61bb6da8efc116ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e611b9d53bf8804",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b171f6ccdaedbc8c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b75fcf20ae1ca767",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "b0a60c659fd2a58c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 307.5
+  },
+  "right": {
+    "id": "9363dd186a1ffbb4",
+    "type": "split",
+    "children": [
+      {
+        "id": "a53658756ef9fde6",
+        "type": "tabs",
+        "dimension": 36.82393555811277,
+        "children": [
+          {
+            "id": "8b8c010a6e749e2b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Courses/Course 1 of 4, Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "7c973ec089ebb1d1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Courses/Course 1 of 4, Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "276b12c6b78f70c1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "2115d83821ee3fc7",
+        "type": "tabs",
+        "dimension": 63.17606444188723,
+        "children": [
+          {
+            "id": "d33ee5830a59a47e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Courses/Course 1 of 4, Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 257.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "22134a9fd41e5f57",
+  "lastOpenFiles": [
+    "Courses/Course 2 of 4, Convolutional Neural Networks in TensorFlow.md",
+    "Courses/Course 1 of 4, Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning.md",
+    "Attachements/Pasted image 20230404143134.png",
+    "Courses/Course 3 of 4, Natural Language Processing in TensorFlow.md",
+    "Attachements/Pasted image 20230402192201.png",
+    "Attachements/Pasted image 20230402191947.png",
+    "Attachements/Pasted image 20230402191530.png",
+    "Courses/Course 4 of 4, Sequences, Time Series and Prediction.md",
+    "Untitled",
+    "NewNotes/Untitled.canvas",
+    "Courses/(Course) Django web framework, 5 of 8 of meta back-end developer professional certificate.md",
+    "Attachements/Pasted image 20230329193444.png",
+    "Courses/(Course) Introduction to Back-end development, 1 of 8 of meta back-end developer professional certificate.md",
+    "Courses/(Course) Advanced React, 6 of 8 Meta front-end developer profe ssional certificate.md",
+    "Courses/(Course) Introduction to Databases for Back-end development, 4 of 8 of meta back-end developer professional certificate.md",
+    "Courses/(Course) Version control, 3 of 8 Meta front-end developer professional certificate.md",
+    "Courses/(Course) Programming with JavaScript, 2 of 8 Meta front-end developer professional certificate.md",
+    "Courses/(Course) Advanced React , 6 of 8 Meta front-end developer professional certificate.md",
+    "Courses/(Course)  HTML and CSS in depth, 4 of 8 of Meta Front-End Developer Professional Certificate.md",
+    "Courses/(Course) React basics, 5 of 8 Meta front-end developer profe ssional certificate.md",
+    "Courses/(Course) Introduction to Front-End Development, 1 of 8 Meta front-end developer professional certificate.md",
+    "Changelog/changelog.md",
+    "Attachements/Pasted image 20230328181418.png",
+    "Attachements/Pasted image 20230327232317.png",
+    "Attachements/Pasted image 20230327230245.png",
+    "Attachements/Pasted image 20230327225738.png",
+    "Attachements/Pasted image 20230327224851.png",
+    "Graph view.md",
+    "All settings.md",
+    "Template_sheet/Problem patterns template.md",
+    "Template_sheet/New model template.md",
+    "Courses"
+  ]
+}

@@ -1,0 +1,4 @@
+- Source: https://www.youtube.com/watch?v=vfonD-2_5Ug
+	- 1. Curiosity 
+	- 2. Divide and conquer (breakdown the tasks smaller)
+	- 3. Providing starter code

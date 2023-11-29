@@ -1,0 +1,3 @@
+- Definition:
+	- Recall: [[dot product]] $x \cdot y$, where $\theta \in [ 0, \pi ]$
+	- $$cos \theta = \frac{Re(x \cdot y)}{||x|| ||y||}$$
