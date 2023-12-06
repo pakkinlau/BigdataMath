@@ -2,7 +2,8 @@
 **Context: Linear Algebra**
 
 
-- Rayleigh quotient is a fundamental concept used to approximate eigenvalues of a matrix. 
+- Idea 1: Rayleigh quotient used to approximate eigenvalues of a matrix. 
+	- Consider  $A \mapsto X^{-1}AX$ is a [Similarity transformation](Similarity%20transformation.md) between $A$ and $X^{-1}AX$. 
 
 ---
 

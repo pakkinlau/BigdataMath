@@ -1,36 +1,17 @@
-**Concept: Projection Operator $\hat Q_{j-1}\hat Q_{j-1}^*$ in Linear Algebra**
+$Q_j Q_j^*$ and $qq^*$ appears very often in linear algebra. What are their meaning? 
 
-**Definition:**
-In linear algebra, the projection operator $\hat Q_{j-1} \hat Q_{j-1}^*$ is a mathematical construct used to project vectors onto a subspace. Let's break down the components of this operator:
-
-1. **$\hat Q_{j-1}$:** This represents a linear transformation or operator that projects vectors onto a subspace associated with the index $j-1$.
-
-2. **$\hat Q_{j-1}^*$:** The superscript $^*$ denotes the conjugate transpose (also known as the adjoint or Hermitian transpose) of the operator $\hat Q_{j-1}$. This involves taking the transpose of the operator and then conjugating its entries.
-
+- $qq^*$: 
+	- This is known as the [outer product](outer%20product.md) of $q$ itself. This operation represents a linear transformation that scales vectors in the direction of $q$ by the length of $q$. 
+- $Q_j Q_j^*$: 
+	- It produces a matrix that represents a projection operation onto the subspace defined by $Q_j$. 
+	- In [projector](projector.md), Since $P$ is unit length sized, and $P$ can be decomposed to be $P = Q \Sigma Q^*$, we can say that $P$ is normal 
+	- You can also connect this concept with $qq^*$ ([outer product](outer%20product.md)). It can be think as a sum of outer products: $QQ^* = q_1q_1^* + \dots + q_n q_n^*$
+- **$\hat Q$:** A single unitary column matrix represents a direction in the vector space. When we multiply a vector by $Q$, we potentially changing direction and magnitude of that veetor. 
+- $Q^*$:  The adjoint $\hat Q_{j-1}^*$ essentially deals with the "backwards" transformation, accounting for the complex conjugation. Combining them in the product $\hat Q_{j-1} \hat Q_{j-1}^*$ ensures that the projection and its adjoint work together seamlessly, resulting in a self-adjoint operator.
 ---
-## Understanding projection operator
-
-To understand how the expression $\hat Q_{j-1} \hat Q_{j-1}^*$ arises for a projection operator, let's consider the steps involved in constructing such an operator. The key concept is to project vectors onto a subspace associated with $\hat Q_{j-1}$.
-
-Here are the steps:
-
-1. **Start with the Projection Operator $\hat Q_{j-1}$:**
-   - The operator $\hat Q_{j-1}$ itself is a projection operator onto a subspace. It takes a vector and projects it onto the subspace associated with the index $j-1$.
-
-2. **Consider the Adjoint (Conjugate Transpose) $\hat Q_{j-1}^*$:**
-   - The adjoint, denoted by $\hat Q_{j-1}^*$, is obtained by taking the conjugate transpose of $\hat Q_{j-1}$. In other words, if $\hat Q_{j-1}$ has entries $q_{ij}$, then the entries of $\hat Q_{j-1}^*$ are $\bar{q}_{ji}$, where $\bar{q}$ denotes the complex conjugate.
-
-3. **Combine $\hat Q_{j-1}$ and $\hat Q_{j-1}^*$:**
-   - The product $\hat Q_{j-1} \hat Q_{j-1}^*$ is formed by multiplying $\hat Q_{j-1}$ with its adjoint $\hat Q_{j-1}^*$.
-
-4. **Analyze the Result:**
-   - The product $\hat Q_{j-1} \hat Q_{j-1}^*$ possesses certain properties, one of which is self-adjointness. This means that $\hat Q_{j-1} \hat Q_{j-1}^*$ is equal to its own conjugate transpose.
-
-**Explanation:**
-When $\hat Q_{j-1}$ projects a vector onto a subspace, its adjoint $\hat Q_{j-1}^*$ essentially deals with the "backwards" transformation, accounting for the complex conjugation. Combining them in the product $\hat Q_{j-1} \hat Q_{j-1}^*$ ensures that the projection and its adjoint work together seamlessly, resulting in a self-adjoint operator.
-
-In summary, the expression $\hat Q_{j-1} \hat Q_{j-1}^*$ for a projection operator arises from the natural combination of a projection operator and its adjoint, guaranteeing certain mathematical properties that are useful in various applications within linear algebra and related fields.
-
+## Occurrence of projection operator ($QQ^*$) in computational mathematics:
+- 
+- [Modified Gram-Schmidt iteration](Modified%20Gram-Schmidt%20iteration.md): $P_j = I - Q_{j-1} Q_{j-1}^*$, where $Q_{j-1}$ is $m \times (j-1)$ matrix containing the first $j-1$ columns of $Q$. 
 
 
 ---

@@ -1,72 +1,24 @@
-# QR Algorithm
 
-The QR algorithm is a widely used method in linear algebra for computing the eigenvalues and eigenvectors of a matrix. This algorithm plays a fundamental role in numerical linear algebra and has numerous applications, including systems of linear equations, computation of matrix inverses, and matrix factorization. 
+- Idea 1: The basic idea of QR algorithm is to decompose the matrix into its QR factorization and then multiply the factors in reversed order
+	- That is, $Q^{(k)}R^{(k)} = A^{(k-1)}$, and then $A^{(k)} = R^{(k)} Q^{(k)}$
 
-## Overview
+- Idea 2: When you multiply $RQ$, you are basically performing Schur transformation $Q^{-1}AQ$, which is a similarity transformation that preserves the eigenvalues of$A$. 
+	- Rearranging terms, we have $R^{(k)} = (Q^{(k)})^T A^{(k-1)}$, and $R^{(k)}Q^{(k)} = (Q^{(k)})^T A^{(k-1)}Q^{(k)}$
+	- $R^{(k)}Q^{(k)}$ is an allowable move is because $A$ is similar to $(Q^{(k)})^T A^{(k-1)}Q^{(k)}$, and 
 
-The QR algorithm, named for the "Q" (an orthogonal matrix) and "R" (an upper triangular matrix) obtained during the process, is an iterative method that progressively transforms a given matrix to a form from which the eigenvalues and eigervectors can be easily computed.
+- Idea 3: Eigenvalues do not change during iterations, eigenvector does.
+	- Since the idea is similar transformation underneath the algorithm, eigenvalues of the initial guess matrix $A^{(0)}$ would not change.
+	- To see how eigenvectors evolves during iterations, consider the following:
+		- Before any changes, we have $A v = \lambda v$. 
+		- After 1 iteration, we have $A_1 v = (RQ) v = R(Qv)$, which $RQ$ is a similar transformation of $A$. 
+		- An idea of how $v$ evolve as follow: Since `R` is upper triangular, its columns are becoming sparser (more zeros) as you move from left to right. Therefore, if `Qv` is aligned more with a right-side column (which has more zeros), the resulting vector after multiplication by `R` will have more zero components, making it "closer" to the coordinate axes in a certain sense.
 
-## Process
-
-1. **QR Decomposition**: The algorithm begins with a QR decomposition of the matrix A, such that A = QR. 
-
-2. **Shift**: The matrix A is then replaced with RQ, which is similar to A and therefore has the same eigenvalues. This process, known as a QR step or QR iteration, is repeated until A converges to a triangular form, from which the eigenvalues can be read directly from the diagonal.
-
-## QR Algorithm Steps
-
-Step 1: Start with a matrix `A`.
-
-Step 2: Perform the QR decomposition of `A`, i.e., `A = QR`.
-
-Step 3: Compute a new matrix `A' = RQ`.
-
-Step 4: Repeat steps 2 and 3 until the matrix `A` converges to a form where the eigenvalues can be easily read from the diagonal.
-
+- Idea 4: To understand how eigenvectors evolves in QR algorithm, study [Simultaneous iteration](Simultaneous%20iteration.md). 
 ---
-To demonstrate the QR algorithm, let's take a 2x2 matrix as an example.
 
-Consider the matrix A:
+## Algorithm
 
-```
-A = [[4, 1]
-     [1, 3]]
-```
-
-We will go through the steps of the QR algorithm using this matrix.
-
-### Step 1: QR Decomposition
-
-First, we perform the QR decomposition of A.
-
-For a 2x2 real matrix A, the QR decomposition can be done with the Givens rotation or Householder reflection. Here, for simplicity, we'll assume we have a function `QR_decomposition(A)` that does this for us.
-
-```
-Q, R = QR_decomposition(A)
-```
-
-This gives us Q (an orthogonal matrix) and R (an upper triangular matrix) such that A = QR.
-
-### Step 2: Shift
-
-Next, we compute a new matrix A' by multiplying R and Q (in that order).
-
-```
-A' = R * Q
-```
-
-### Step 3: Repeat
-
-The last step is to repeat Steps 1 and 2 until A' converges to an upper triangular form. The diagonal of this final matrix will contain the eigenvalues of the original matrix A.
-
-```
-while not converged:
-    Q, R = QR_decomposition(A')
-    A' = R * Q
-```
-
-For a real symmetric matrix like the one we started with, the QR algorithm is guaranteed to converge, and the resulting matrix will be diagonal.
-
-**Note**: This is a simplified demonstration of the QR algorithm. In actual implementation, the QR decomposition step can be nontrivial to perform, and checking for convergence requires defining a suitable metric. The process is also computationally expensive, especially for large matrices. However, this demonstration provides a basic understanding of the steps involved in the QR algorithm.
+![](Pasted%20image%2020231206143515.png)
 
 ---
 ## Key Notes

@@ -149,6 +149,7 @@ tag: index
 	- Discuss why [[Household triangularization]] cannot approximate triangular matrices
 	- [[Hessenberg form]]
 	- [[Reduction to Hessenberg form]]
+	- [[Hessenberg matrix]]
 - Lecture 27 - Classical methods for eigenvalues 
 	- (Why we assume $A$ is real and symmetric?)
 	- Classical methods for eigenvalues

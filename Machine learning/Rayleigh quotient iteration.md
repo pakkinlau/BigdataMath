@@ -2,16 +2,17 @@
 
 ---
 
-## The changes
+Idea 1: Rayleigh quotient is just [Inverse iteration](Inverse%20iteration.md), with a substitution of $\lambda^{(-1)}$ from $\mu$.  
+- Replacing $\mu$ with $\lambda^{(k-1)}$ which would change together with the initial guess vector $v^{(k)}$ in each iteration. 
 
-- 1. Improved initial guess
-	- Instead of pick some random $\mu$, now we pick $v^{(0)}$ and our initial eigenvalue $\lambda^{(0)} = (v^{(0)})^T A v^{(0)}$. This expression is based on [[Rayleigh quotient]].
-- 2. Improved convergence
-	- Not only changing the initial guess, but also giving a faster convergence by sticking $\mu = \lambda^{(k-1)} = (v^{(k-1)})^T A v^{(k-1)}$
+Idea 2: Since the left multiplying matrix $A-\lambda^{(k-1)}I$ is changing in each iteration, the convergence is much effective. 
+- So the convergent rate would be larger. Each iteration triples the number of digits of accuracy. 
 
-So Rayleigh quotient iteration has such construction:
-- $(A-\lambda^{(k-1)}I)w=v^{(k-1)}$
-- The shift $\mu = \lambda^{(k-1)}$ helps the iteration converge faster towards the desired eigenvalue and its corresponding eigenvector. 
+Idea 3: In stability analysis, we just put a power of $3$ in the order of error, comparing to power iteration. 
+- $||v^{(k+1)}-(\pm q_{J})||=O(||v^{(k)}-(\pm q_{J})||^{3})$
+- $|\lambda^{(k+1)}-\lambda_{J}|=O(|\lambda^{(k)}-\lambda_{J}|^{3})$
+
+
 
 ---
 ## Algorithm

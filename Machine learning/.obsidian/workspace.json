@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "All courses/CUHK MSc math/MATH4280 innovation and design of big data analytics.md",
+                "file": "All courses/CUHK MSc math/MMAT5320 Computational mathematics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5479ee18a450d128",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Simultaneous iteration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2c135b6f4ca7dfbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Convergence of QR algorithm.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "truncate",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -87,7 +112,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "All courses/CUHK MSc math/MATH4280 innovation and design of big data analytics.md",
+                "file": "Simultaneous iteration.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "-tag:#index  ",
@@ -122,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "All courses/CUHK MSc math/MATH4280 innovation and design of big data analytics.md",
+                "file": "Simultaneous iteration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "All courses/CUHK MSc math/MATH4280 innovation and design of big data analytics.md"
+                "file": "Simultaneous iteration.md"
               }
             }
           },
@@ -172,7 +197,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "All courses/CUHK MSc math/MATH4280 innovation and design of big data analytics.md",
+                "file": "Simultaneous iteration.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,8 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 203.5,
-    "collapsed": true
+    "width": 203.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,44 +224,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bee1b2ac49057255",
+  "active": "5479ee18a450d128",
   "lastOpenFiles": [
-    "NewNotes/Singular value decomposition.md",
-    "All courses/CUHK MSc math/MATH4280 innovation and design of big data analytics.md",
+    "Convergence of QR algorithm.md",
     "All courses/CUHK MSc math/MMAT5320 Computational mathematics.md",
-    "vector decomposition.md",
-    "characteristic polynomial.md",
-    "diagonalization.md",
-    "Schur factorization.md",
-    "Similarity transformation.md",
-    "Trace.md",
-    "geometric multiplicity.md",
-    "algebraic multiplicity.md",
-    "spectral decomposition.md",
-    "Spectral theorem.md",
-    "eigenspace.md",
-    "Normal equation.md",
-    "residual vector , error.md",
-    "unitary diagonalizable.md",
-    "Relative condition number.md",
-    "Absolute condition number.md",
-    "NewNotes/rank.md",
-    "Attachements/Pasted image 20231126210011.png",
-    "Orthogonal Projector.md",
-    "complex conjugate.md",
-    "conjugate transpose.md",
-    "Eigenvalue problems.md",
+    "Simultaneous iteration.md",
+    "QR algorithm.md",
+    "Attachements/Pasted image 20231206143515.png",
     "Rayleigh quotient iteration.md",
-    "Attachements/Pasted image 20231126175246.png",
+    "Power iteration.md",
     "Inverse iteration.md",
+    "Rayleigh quotient.md",
+    "Similarity transformation.md",
+    "Stability.md",
+    "Hessenberg matrix.md",
+    "Householder reflector.md",
+    "Household triangularization.md",
+    "Triangular orthogonalization.md",
+    "diagonalization.md",
+    "Modified Gram-Schmidt iteration.md",
+    "projection operator (QQT).md",
+    "outer product.md",
+    "unitary diagonalizable.md",
+    "unitarily diagonalization.md",
+    "Projection.md",
+    "Projection formula.md",
+    "Unstable Gram-Schmidt process.md",
+    "Attachements/Pasted image 20231205205655.png",
+    "Attachements/Pasted image 20231205200104.png",
+    "All courses/CUHK MSc math/MATH4280 innovation and design of big data analytics.md",
+    "NewNotes/Singular value decomposition.md",
+    "vector decomposition.md",
+    "Attachements/Pasted image 20231126210011.png",
+    "Attachements/Pasted image 20231126175246.png",
     "Attachements/Pasted image 20231126174200.png",
     "Attachements/Pasted image 20231126163102.png",
     "Attachements/Pasted image 20231126150455.png",
     "Attachements/Pasted image 20231126114146.png",
     "Attachements/Pasted image 20231125234530.png",
-    "Attachements/Pasted image 20231125205508.png",
-    "Attachements/Pasted image 20231125205238.png",
-    "Attachements/Pasted image 20231125205034.png",
     "Huawei/Huawei/HCIA/HCIA-Cloud Service V3.0 Training Material.pdf",
     "Huawei/Huawei/HCIA/HCIA-Cloud Service V3.0 Learning Guide.pdf",
     "Huawei/Huawei/HCIA/HCIA-Cloud Service V3.0 Lab Guide.pdf",

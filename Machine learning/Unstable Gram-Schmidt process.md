@@ -19,6 +19,46 @@ Gram-Schmidt process is a fundamental technique in linear algebra used to transf
 	- decompose $q_k$ into orthonormal vectors that is align to that set of basis. We divide $(A,B,C,\dots, Z)$ with their length. $q_1 = \frac{A}{||A||}$, $q_2 = \frac{B}{||B||}$
 	- Error vector would be $B = b - \frac{A^Tb}{A^TA}A$
 
+Idea of unstable Gram-Schmidt 
+- We pick the first vector $a_1$ as our first vector. The choice of first pick does not matter to the calculation result. 
+- And then we consider b.
+- We subtract all parts of b that are parallel to a from vector b, the remaining parts of b would be orthogonal to a. 
+![](Pasted%20image%2020231205205655.png)
+
+For a matrix $A$, there are $n$ column vectors in there. 
+
+Vector $a_1$: 
+- $v_1 = a_1$
+- $q_1 = v_1 / ||v_1||$
+Vector $a_2$:
+- $v_2 = a_2 - a_{2 \perp {a_1}} = a_2 - (q_1^* a_2) q_1$ (notice that $q_1^* a_2$ is computing the scalar, and $q_1$ is providing unitary direction)
+- $q_2 = v_2 / ||v_2||$
+
+Vector $a_k$, where $k$ is from $2$ to $n:
+- $v_k = a_k - \sum_{i=1}^{k-1} (q_{i}^* a_k) q_i$ (not sure this expression is correct)
+- $q_k  = v_k / ||v_k||$
+
+[Gram-Schmidt coefficient $r_{ij}$](Gram-Schmidt%20coefficient%20$r_{ij}$.md):
+In general, 
+$r_{ij}$ are coefficients related to subject vector $j$ to prior object vector $i$ that are orthogonal to itself. And we use dot product to $q_i^* a_2$ to compute such scalar. 
+$r_{jj}$ is related to the scalar of subject vector to itself. So it is basically the 2-norm of itself before we normalize $v_j$. 
+
+In general we have following formula to obtain Gram-Schmidt coefficients $r_{jj}$: 
+$r_{ij} = q_i^* a_j$
+$r_{jj} = || v_j||$
+
+---
+
+
+
+
+
+
+- Write it in formula, it would be:
+![](Pasted%20image%2020231205200104.png)
+
+
+
 - Algorithm:
 ![[Pasted image 20231101035820.png]]
 

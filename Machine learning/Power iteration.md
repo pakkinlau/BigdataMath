@@ -1,7 +1,27 @@
-- Power iteration is an iterative numerical method used in linear algebra to find the dominant eigenvalue and its corresponding eigenvector of a square matrix. 
-- Eigenvalues and eigenvectors play a crucial role in various applications, such as analyzing dynamic systems, image processing, and machine learning algorithms. 
-- Power iteration is particularly efficient for large matrices, as it doesn't require the explicit computation of the matrix's eigenvalues and eigenvectors.
-
+- Idea 1: Power iteration is particularly efficient for large matrices, 
+	- as it doesn't require the explicit computation of the matrix's eigenvalues and eigenvectors.
+- Idea 2:Power iterations only find the dominant eigenvalue (the largest one, $\lambda_1$), not all the eigenvalues. 
+- Idea 3: The terms after the dominant term diminishing
+	$v^{(0)} = a_1 q_1 + a_2 q_2 + \dots + a_m q_m$
+	- Where $v^{(0)}$ is a vector that represent our initial guess of the sequence of eigenvectors of the matrix. 
+	- We can always express this vector as some linear combination of the eigenvectors. While we don't know the exact value of eigenvectors, coefficient $a_i$ does the job.
+	After $k$ power iterations, our initial guess vector becomes: $v^{(k)} = c_k (a_1 \lambda_1^k q_1 + a_2 \lambda_2^k q_2 + \dots ) = c_k \lambda_1^k (a_1 q_1 + (\frac{\lambda_2}{\lambda_1})^k q_2 + \dots )$
+	- where $c_k$ is normalization constant. 
+	- Every time $q_k$ hitting $A$ in the power iteration, because $Ax_k = \lambda_k x_k$, it produces $\lambda_k$. And $a_l$ and $q_k$ remain in there in each power iteration. 
+	Diminishing higher order terms, 
+	- When $k \rightarrow \infty$, , $\lambda_1 \geq \lambda_2 \geq \lambda_3 \dots$. So $\frac{\lambda_2}{\lambda_1}$, $\frac{\lambda_3}{\lambda_1}$, ... are smaller than $1$. And as $k$ goes to infinity, all other terms drops away. That leaves us $v^{(k)} = c_k \lambda_1^k a_1 q_1$. 
+- Idea 4: Stability analysis and convergence rate
+	Error between initial 
+	- In the previous step, we see that power iteration guarantees it will converges to the largest eigenvalue $\lambda_1$. 
+	- So we have $||v^{(k)} - (\pm q_1)|| = O(| \frac{\lambda_2}{\lambda_1})|^k)$
+		- where $||v^{(k)} - (\pm q_1)||$ represents our knowledge of "power iterations of $v^{(o)}$approximate to the first eigenvector of the matrix $A$"
+		- The order of error is $|\frac{\lambda_2}{\lambda_1}|^k$ is because the largest error term is the second term. 
+	- And we have $|\lambda^{(k)} - \lambda_1| =  O(| \frac{\lambda_2}{\lambda_1})|^{2k})$
+		- Power iterations give as a resulting vector $v^{(k)}$ approximate the most dominant eigenvector. 
+		- We can past this eigenvector to [Rayleigh quotient](Rayleigh%20quotient.md). In the expression of [Rayleigh quotient](Rayleigh%20quotient.md) we can see that there is two $v^{(k)}$ there. Therefore, the error order is double powered. 
+- Idea 5: It is a linear convergence
+	- When we say "linear convergence" in the context of power iteration, we are not referring to the shape of the convergence curve on a logarithmic chart. Instead, it indicates a specific convergence rate.
+	- In power iteration, the convergence is considered linear because the error or difference between the estimated eigenvector and the true eigenvector decreases at a fixed rate with each iteration. More precisely, the error decreases by a constant factor at each iteration.
 
 ---
 
@@ -9,20 +29,14 @@ Algorithm:
 
 ![[Pasted image 20231126163102.png]]
 
----
+**Key Steps of Power Iteration:**
 
 Setting:
 
-Say we have Hermitian matrix $A \in \mathbb{m \times m}$ 
-- We have a set of eigenvalues: $\lambda_1, \lambda_2, \dots, \lambda_m$ are real and distinct
-- We have a set of orthonormal basis $q_1, q_2, \dots, q_m$ 
+Say we have matrix $A \in \mathbb{m \times m}$ 
+- We have a set of eigenvalues of matrix $A$ $\lambda_1, \lambda_2, \dots, \lambda_m$ are real and distinct
+- We have a set of orthonormal basis $q_1, q_2, \dots, q_m$ of matrix $A$ 
 
----
-Power iterations only find the dominant eigenvector (the largest one, $\lambda_1$), not all the eigenvectors. 
-
----
-
-**Key Steps of Power Iteration:**
 
 1. **Initialization:** Start with a random vector $v_0$. This vector can be generated randomly or chosen based on domain knowledge.
 	- Options of $v_0$:
@@ -40,66 +54,3 @@ Power iterations only find the dominant eigenvector (the largest one, $\lambda_1
 3. **Convergence:** Repeat the iteration process until the dominant eigenvalue and its corresponding eigenvector converge to a stable solution. 
 	- Typically, the algorithm converges to the dominant eigenpair (eigenvalue and eigenvector) of the matrix $A$.
 	- I guess, to gauge whether it is stable, we compare $R(x_k)$ with $R(x_{k-1})$ .
-
----
-How it works?
-
-$v^{(0)} = a_1 q_1 + a_2 q_2 + \dots + a_m q_m$
-- Because $A$ is Hermitian, we can always express this vector as some linear combination of the eigenvectors. 
-$v^{(k)} = c_k (a_1 \lambda_1^k q_1 + a_2 \lambda_2^k q_2 + \dots ) = c_k \lambda_1^k (a_1 q_1 + (\frac{\lambda_2}{\lambda_1})^k q_2 + \dots )$
-- where $c_k$ is normalization constant. 
-- Every time $q_k$ hitting $A$ in the power iteration, because $Ax_k = \lambda_k x_k$, it produces $\lambda_k$. And $a_l$ and $q_k$ remain in there in each power iteration. 
-- Remember, $\lambda_1 \geq \lambda_2 \geq \lambda_3 \dots$. So $\frac{\lambda_2}{\lambda_1}$, $\frac{\lambda_3}{\lambda_1}$, ... are smaller than $1$. And as $k$ goes to infinity, all other terms drops away. That leaves us $v^{(k)} = c_k \lambda_1^k a_1 q_1$. 
-
-So power iteration guarantees it will converges to the largest eigenvalue $\lambda_1$. 
-
-
-
----
-Q: why $w = Av_k$ can lead to vector converge to eigenvector (changing to the direction of eigenvectors)?
- 
-The equation $w = Av_k$ in the power iteration method leads to the vector changing its direction closer to the direction of the eigenvector due to the fundamental properties of eigenvalues and eigenvectors in linear transformations. Let me explain this in more detail:
-
-1. **Eigenvalues and Eigenvectors:**
-   - For a square matrix $A$, an eigenvector $v$ and its corresponding eigenvalue $\lambda$ satisfy the equation $Av = \lambda v$.
-   - Geometrically, an eigenvalue-eigenvector pair represents a special case where the transformation $A$ only stretches or compresses the vector $v$ without changing its direction. The eigenvalue $\lambda$ represents the scaling factor, and $v$ represents the direction.
-
-2. **Matrix-Vector Multiplication $Av_k$:**
-   - When you multiply the current approximation $v_k$ by the matrix $A$, you are essentially applying the linear transformation represented by $A$ to the vector $v_k$.
-   - In this context, $Av_k$ represents the transformation of $v_k$ by $A$, which may stretch, compress, or rotate $v_k$ depending on the eigenvalues and eigenvectors of $A$.
-
-3. **Dominant Eigenvector and Eigenvalue:**
-   - In power iteration, the algorithm is designed to find the dominant eigenvector, which corresponds to the largest eigenvalue in magnitude.
-   - If $A$ has a dominant eigenvalue $\lambda_1$ with a corresponding eigenvector $v_1$, multiplying $v_k$ by $A$ magnifies the component of $v_k$ in the direction of $v_1$, as $Av_k$ aligns more with $v_1$.
-   - With each iteration, the direction of $v_k$ becomes closer to the direction of $v_1$ due to the repeated application of $A$.
-
-4. **Normalization Step:**
-   - After multiplying $v_k$ by $A$ to get $w = Av_k$, the vector $w$ is normalized ($v_{k+1} = \frac{w}{\|w\|}$) to ensure that the vector doesn't grow infinitely.
-   - Normalization adjusts the length of the vector while preserving its direction, focusing the algorithm on the direction rather than the magnitude.
-
-5. **Convergence:**
-   - Due to the repeated multiplication by $A$ and normalization, the components of $v_k$ corresponding to the dominant eigenvector $v_1$ become more prominent in each iteration.
-   - The algorithm converges as $v_k$ gradually aligns its direction with the dominant eigenvector $v_1$.
-
-In summary, the matrix-vector multiplication $Av_k$ allows the algorithm to emphasize the direction of the dominant eigenvector, leading to the vector $v_k$ changing its direction and converging closer to the direction of the eigenvector associated with the dominant eigenvalue.
-
-
----
-
-**Working Principle:**
-
-Power iteration relies on the fact that, after several iterations, the vector $v_k$ converges to the dominant eigenvector of the matrix $A$, and the corresponding eigenvalue approaches the dominant eigenvalue. The method takes advantage of the property that the dominant eigenpair of a matrix has the largest magnitude eigenvalue, making it easier to converge using iterative methods.
-
-**Limitations:**
-
-- Power iteration only finds the dominant eigenpair. It won't work well if you need multiple eigenpairs.
-- It may converge to a different eigenpair if the matrix has repeated eigenvalues.
-- The method may converge slowly if the ratio between the dominant eigenvalue and the next largest eigenvalue is close to 1.
-
-**Applications:**
-
-- **PageRank Algorithm:** Power iteration is used in the PageRank algorithm, which Google uses to rank web pages in its search engine results.
-- **Principal Component Analysis (PCA):** Power iteration is employed to find principal components in PCA, a technique used for dimensionality reduction and data analysis.
-- **Markov Chains:** Power iteration is utilized in analyzing Markov chains, which model random processes with specific transition probabilities between states.
-
-In summary, power iteration is a fundamental technique in linear algebra, providing an efficient way to find the dominant eigenpair of a matrix, which has diverse applications in various fields.

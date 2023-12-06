@@ -1,14 +1,38 @@
 
 It is a of a type of [[Triangular orthogonalization]]. 
 
+Vector normalization: - $q_j = \frac{v_i}{||v_i||}$
 
-notations and steps involved:
+In modified Gram-Schmidt, we use the following to establish:
+- $v_j = P_j a_j$
+- $P_1 = I$ 
+- $P_j = I - Q_{j-1} Q_{j-1}^*$, where $Q_{j-1}$ is $m \times (j-1)$ matrix containing the first $j-1$ columns of $Q$.
+	- Related: 
+		- [projection operator (QQT)](projection%20operator%20(QQT).md)
+		- [outer product](outer%20product.md)
 
-- $v_j = P_j a_j$ 
-- $q_j = \frac{v_j}{||v_j||}$
-- $P_j = P_{\perp_{qj-1}} \dots  P_{\perp_{q2}} P_{\perp_{q1}}$
-	- Recall that $P_{\perp}$ is the orthogonal projector onto the space orthogonal to $q$. 
-- $P_1 = I$
+How we have: 
+- $P_j = P_{\perp q_{j-1}} \dots P_{\perp q_2} P_{\perp q_1}$ from above formulas 
+
+### To see how this chain projection formula stands: 
+
+We can derive the equation using induction. The base case ($j=1$) is trivial because $P_1 = I$ by definition and there are no $q_k$ vectors to project onto yet, so the equation holds.
+
+Assume it holds for $P_j = P_{\perp q_{j-1}} \dots P_{\perp q_2} P_{\perp q_1}$ for some $j>1$.
+
+Now consider $P_{j+1} = I - Q_j Q_j^*$, where $Q_j$ is the $m \times j$ matrix containing the first $j$ columns of $Q$. We can write $Q_j$ as $[Q_{j-1}, q_j]$, where $Q_{j-1}$ is the $m \times (j-1)$ matrix containing the first $j-1$ columns of $Q$ and $q_j$ is the $j$-th column vector. 
+
+Then, $Q_j Q_j^* = [Q_{j-1}, q_j] [Q_{j-1}, q_j]^* = Q_{j-1} Q_{j-1}^* + q_j q_j^*$.
+
+Substituting into $P_{j+1} = I - Q_j Q_j^*$, we get $P_{j+1} = I - (Q_{j-1} Q_{j-1}^* + q_j q_j^*) = (I - Q_{j-1} Q_{j-1}^*) - q_j q_j^* = P_j - q_j q_j^*$.
+
+Since $q_j$ is orthogonal to the subspace spanned by $Q_{j-1}$ (by the definition of the Gram-Schmidt process), $q_j q_j^*$ can be thought of as a projection onto the orthogonal complement of $q_j$, so $P_{j+1} = P_j P_{\perp q_j}$. 
+
+Substituting the induction assumption $P_j = P_{\perp q_{j-1}} \dots P_{\perp q_2} P_{\perp q_1}$, we get $P_{j+1} = P_{\perp q_{j-1}} \dots P_{\perp q_2} P_{\perp q_1} P_{\perp q_j}$, completing the induction step.
+
+So, by induction, we have $P_j = P_{\perp q_{j-1}} \dots P_{\perp q_2} P_{\perp q_1}$ for all $j$.
+
+---
 
 - We need to compute $v_j = P_{\perp_{q_{j-1}}} \dots P_{\perp_{q_{2}}} P_{\perp_{q_{1}}} a_j$. 
 	- $v_j^{(1)} = a_j$

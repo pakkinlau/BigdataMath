@@ -13,7 +13,8 @@ $A \mapsto X^{-1}AX$
 	- 2. Same determinant, eigenvalues, same characteristic polynomial:
 		- It came from the theorem we proved below: $p_{X^{-1}AX}(z) = p_A(z)$. 
 	- More possible properties but we don't discuss further. 
-
+- Idea 3: $A$ is similar to its diagonal matrix $\Lambda$.
+	- If $X$ is the matrix whose columns are eigenvectors of $A$ and $\Lambda$ is the diagonal matrix of corresponding eigenvalues, then we can write $AX = X\Lambda$. This leads to the relationship $A = X\Lambda X^{-1}$, showing that $A$ is similar to the diagonal matrix $\Lambda$.
 ---
 
 Theorem: 
