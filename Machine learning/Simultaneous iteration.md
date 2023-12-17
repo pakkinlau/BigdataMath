@@ -13,7 +13,7 @@ We start with $n$ linearly independent vectors as our guess of eigenvector of $A
 - The first n + 1 eigenvalues are distinct, that is, $|\lambda_1| > \dots > |\lambda_{n+1}|  \geq \lambda_{n+2}| \geq \dots \geq |\lambda_m|$ 
 - All the leading principal submatrices of $\hat Q^T V^{(0)}$ are nonsingular.
 - Let $q_j^{(k)}$ be the j-th column of $\hat Qˆ(k)$. Then $||q_j^{(k)} - \pm q_j|| = O(C^k)$. where $C = \underset{1 \leq k \leq n}{max} | \frac{\lambda_{k+1}}{\lambda_k}| < 1$.
-
+s
 ![[Pasted image 20231113044409.png]]
 
 

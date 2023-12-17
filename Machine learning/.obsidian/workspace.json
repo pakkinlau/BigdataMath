@@ -20,19 +20,19 @@
             }
           },
           {
-            "id": "5479ee18a450d128",
+            "id": "dd6e2375dbfb64d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Simultaneous iteration.md",
+                "file": "Changelog/Changelog.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2c135b6f4ca7dfbd",
+            "id": "6a0780e42b5db21d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "truncate",
+                "query": "changelog",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -90,12 +90,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 297.5
+    "width": 297.5,
+    "collapsed": true
   },
   "right": {
     "id": "c086350e2a91299d",
@@ -112,7 +112,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Simultaneous iteration.md",
+                "file": "Convergence of QR algorithm.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "-tag:#index  ",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Simultaneous iteration.md",
+                "file": "Convergence of QR algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Simultaneous iteration.md"
+                "file": "Convergence of QR algorithm.md"
               }
             }
           },
@@ -197,7 +197,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Simultaneous iteration.md",
+                "file": "Convergence of QR algorithm.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,27 +224,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5479ee18a450d128",
+  "active": "6a0780e42b5db21d",
   "lastOpenFiles": [
-    "Convergence of QR algorithm.md",
-    "All courses/CUHK MSc math/MMAT5320 Computational mathematics.md",
+    "Changelog/Changelog.md",
     "Simultaneous iteration.md",
     "QR algorithm.md",
-    "Attachements/Pasted image 20231206143515.png",
     "Rayleigh quotient iteration.md",
-    "Power iteration.md",
     "Inverse iteration.md",
-    "Rayleigh quotient.md",
+    "Power iteration.md",
     "Similarity transformation.md",
+    "Rayleigh quotient.md",
     "Stability.md",
     "Hessenberg matrix.md",
+    "All courses/CUHK MSc math/MMAT5320 Computational mathematics.md",
     "Householder reflector.md",
     "Household triangularization.md",
     "Triangular orthogonalization.md",
-    "diagonalization.md",
-    "Modified Gram-Schmidt iteration.md",
     "projection operator (QQT).md",
     "outer product.md",
+    "diagonalization.md",
+    "Modified Gram-Schmidt iteration.md",
+    "Changelog",
+    "Convergence of QR algorithm.md",
+    "Attachements/Pasted image 20231206143515.png",
     "unitary diagonalizable.md",
     "unitarily diagonalization.md",
     "Projection.md",
@@ -254,7 +256,6 @@
     "Attachements/Pasted image 20231205200104.png",
     "All courses/CUHK MSc math/MATH4280 innovation and design of big data analytics.md",
     "NewNotes/Singular value decomposition.md",
-    "vector decomposition.md",
     "Attachements/Pasted image 20231126210011.png",
     "Attachements/Pasted image 20231126175246.png",
     "Attachements/Pasted image 20231126174200.png",
@@ -270,7 +271,6 @@
     "Huawei/Huawei/HCIA/HCIA-AI V3.5 Training Material.pdf",
     "Huawei/Huawei/HCIA/HCIA-AI V3.5 Lab Guide.pdf",
     "Huawei/Huawei/HCIA/Big data lab/data & jar.rar",
-    "Huawei/Huawei/HCIA/Big data lab/HCIA-Big Data V3.5 Lab Guide.pdf",
-    "Huawei/Huawei/HCIA/Big data lab"
+    "Huawei/Huawei/HCIA/Big data lab/HCIA-Big Data V3.5 Lab Guide.pdf"
   ]
 }
